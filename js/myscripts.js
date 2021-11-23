@@ -26,7 +26,7 @@ document.getElementById("myFooter").innerHTML =
 	+"<li>Cullen College of Engineering</li>"
 	+"<li>University of Houston</li>"
 	+"<li>Office: N206, Engineering Building 1</li>"
-	+"<li>Email: cyu15-at-uh-dot-edu</li>"
+	+"<li>Email: cyu15@uh.edu</li>"
 	+"</ul>"
 	+"</div>"
 	+"<div class='footer-col'>"
