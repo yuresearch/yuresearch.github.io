@@ -33,5 +33,4 @@ document.getElementById("myFooter").innerHTML =
 	+"</div>"
 	+"</div>"
 	+"</div>"
-	+"<div class='footer-text'>Website support: Chris Cai & academic.bio</div>"
 	+"</footer>";
