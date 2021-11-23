@@ -27,6 +27,7 @@ document.getElementById("myFooter").innerHTML =
 	+"<li>University of Houston</li>"
 	+"<li>Office: N206, Engineering Building 1</li>"
 	+"<li>Email: cyu15@uh.edu</li>"
+	+"<li>Phone No.:713-743-4487</li>"
 	+"</ul>"
 	+"</div>"
 	+"<div class='footer-col'>"
