@@ -417,6 +417,7 @@ ol.publications .year {
 
 em.journal {
   font-style: italic;
+  font-weight: bold;
   color: #b83316; }
 
 hr.dividing-line{
