@@ -2,273 +2,147 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>News</title>
-  <meta name="description" content="">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="canonical" href="./projects.html">
-  <link rel="alternate" type="application/rss+xml" title="Zhao's Group" href="./feed.xml">
+  <link rel="canonical" href="./news.html">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: white;
+    }
 
+    .content-box {
+      width: 90%;
+      max-width: 1200px;
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .header img {
+      width: 60px;
+      margin-right: 15px;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .site-nav {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .site-nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 8px 15px;
+    }
+
+    .site-nav a.active {
+      font-weight: bold;
+      border-bottom: 2px solid #333;
+    }
+
+    h1, h4 {
+      color: #333;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2em;
+    }
+
+    h4 {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: blue;
+    }
+
+    .post-content ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+    }
+
+    .post-content li {
+      margin-bottom: 10px;
+    }
+
+    .dividing-line {
+      margin: 30px 0;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 
-
 <body>
-  <!-- Content box where logo and title will be placed -->
-  <div class="content-box" style="width: 93%; background-color: white; padding: 20px;">
-    <!-- Adding logo and title -->
-    <div style="display: flex; align-items: center; padding-bottom: 20px;">
+  <!-- Main Content Container -->
+  <div class="content-box">
+    <!-- Header with logo and title -->
+    <div class="header">
       <!-- University logo with link -->
       <a href="https://illinois.edu/" target="_blank">
-        <img src="./images/uiuc logo.jpg" alt="University Logo" style="width: 50px; height: auto; margin-right: 15px;">
+        <img src="./images/uiuc logo.jpg" alt="University Logo">
       </a>
       <!-- Research group title -->
-      <h1 style="margin: 0;">Yu Research Group</h1>
+      <h1>Yu Research Group</h1>
     </div>
-        <!-- <div class="navigation-logo"> -->
-          <!-- </div> -->
-          <nav class="site-nav">
-            <a href="#" class="menu-icon">
-              <svg viewBox="0 0 18 15" width="18px" height="15px">
-                <path fill="#424242"
-                d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
-                <path fill="#424242"
-                d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
-                <path fill="#424242"
-                d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
-              </svg>
-            </a>
-            <div class="trigger">
-              <a class="page-link" href="./index.html">Home</a>
-	      <a class="page-link" href="./Dr. Yu.html">Dr. Yu</a>
-              <a class="page-link" href="./people.html">People</a>
-              <a class="page-link active" href="./research.html">Research</a>
-              <a class="page-link " href="./publications.html">Publications</a>
-              <a class="page-link " href="./openings.html">Openings</a>
-	      <a class="page-link " href="./Group News.html">Group News</a>
-            </div>
-          </nav>
-        </div>
-      </header>
 
+    <!-- Navigation bar -->
+    <nav class="site-nav">
+      <a href="./index.html">Home</a>
+      <a href="./Dr. Yu.html">Dr. Yu</a>
+      <a href="./people.html">People</a>
+      <a href="./research.html">Research</a>
+      <a href="./publications.html">Publications</a>
+      <a href="./openings.html">Openings</a>
+      <a class="active" href="./Group News.html">Group News</a>
+    </nav>
 
-      <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-          <article class="post">
+    <!-- Main Content Section -->
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">Group News</h1>
+          </header>
 
-            <header class="post-header">
-              <h1 class="post-title">Group News</h1>
-            </header>
-
-            <div class="post-content">
-              <ul>
-		      
-<li>Hearty Congratulations to <b>Faheem Ershad</b> for accepting a <b>tenure track Assistant Professor</b> position in the Department of Electrical and Computer Engineering at <b> University of Houston</b>! Faheem is scheduled to defend his dissertation in the summer, and will stay for a short stint in our lab at UIUC before leaving for his faculty position. (May 2024)</li>
-		      <li>Dr. Yu was honored as the recipient of the <b>2023 ASME Chao and Trigger Young Manufacturing Engineer Award</b>. The Chao and Trigger Young Manufacturing Engineer Award recognizes a young manufacturing researcher under 40 with potential for significant fundamental contributions to the science and technology of manufacturing processes. (June 2023)</li>
-		      
-		      <li>Dr. Yu was selected as the recipient of the <b>2023 Chinese Association for Biomaterials CAB Mid-Career Investigator Award</b>. The CAB Mid-Career award recognizes the individuals who have successfully demonstrated significant achievements in the field of biomaterials research. (Feb. 2023)</li>
-									
-		      <li>The manuscript led by Hyunseok, Kyoseung, Binghao, and Yongcao on stretchable n-type elastomer-semiconductor-elastomer stack structure and its integrated electronics is accepted by <b style="color:blue;"> Nature Electronics</b>. (Feb. 2023)</li>
-		      
-		      <li>Congratulations to <b>Hyunseok Shim</b> for accepting a <b>tenure track faculty</b> position in <b>Pusan National University</b>, South Korea! Best wishes for his future academic career! (Jan. 2023)</li>
-		      
-		      <li><b>Dr. Yu</b> was selected to receive the <b> 2023 ASME Thomas J. R. Hughes Young Investigator Award </b> (Nov. 2022)</li>
-		      
-		      <li>The manuscript led by Seonmin and Hyunseok on rubbery Schottky diode and integrated device is accepted by <b style="color:blue;"> Science Advances</b>. (Oct. 2022)</li>
-		      
-		      <li><b>Zhoulyu Rao</b> was among the Year 2022 awardees of the very prestigious <b>Chinese Government Award for Outstanding Students Studying Abroad</b>! Hearty Congratulations! This is wonderful news! (Sept. 2022)</li> 
-		      <li>Our paper led by Shubham Patel and Faheem Ershad on DoS sensors for electrophysiology was selected as the <b style="color:blue;"> Back Cover</b> of <b style="color:blue;"> Small</b>. Congratulations! (Aug. 2022)</li>
-		      
-		      <li>Our paper led by Dr. Yingshi Guan on spin coating formed micromesh-structured rubbery semiconductor films  is accepted by <b style="color:blue;"> Nature Electronics</b>. (Aug. 2022)</li>
-		      
-		      <li>Our review paper on wearable electronics for wound monitoring and healing led by Shubham Patel was selected as <b style="color:blue;">Cover</b> of the Issue of <b style="color:blue;">Soft Science</b>. (Jun. 2022)</li>
-		     
-			<li>Our work on rubbery reconfigurable synaptic transistor led by Hyunseok Shim is accepted by <b style="color:blue;"> Nature Electronics</b>. (Jun. 2022)</li>
-		      
-		     	 <li>Our work on artificial, distributed neuromorphic cognitive skins led by Hyunseok Shim is accepted by <b style="color:blue;"> PNAS</b>. (Apr. 2022)</li>
-								
-			<li>Our paper on all-polymer based stretchy rubbery electronics was selected as the <b style="color:blue;">Inside Front Cover</b> of <b style="color:blue;"> Advanced Functional Materials</b>. Congratulations! (Mar. 2022)</li>
-		      
-		      <li><b>Faheem Ershad's</b> presentation was placed as the 2nd Place in the ESM Toady Graduate Research Symposium. Congratulations! (Mar. 2022)</li>
-		      
-		      <li>Congratulations to <b>Bin Kan</b> for joining the tenure-track faculty of <b>Nankai University</b>, China! Wish Bin the best for his future academic career! (Sept. 2021)</li>
-									
-		      							<li>Congratulations to <b>Yingshi Guan</b> for joining the faculty of <b>Southeast University</b>, China as a <b>Full Professor</b>! Wish Yingshi the best for his future academic career! (June 2021)</li>
-									
-		      							<li>Our work on 3D curvy, shape adaptive imager based on CAS printing led by Zhoulyu Rao and Yuntao Lu is accepted by <b style="color:blue;">Nature Electronics</b>. (Apr. 2021)</li>
-									
-	<li><b>Dr. Yu</b> was selected to receive the <b>2021 Senior Faculty Research Excellence Award</b> in the Cullen College of Engineering. (Apr. 2021)</li>
-									
-		      							<li><b>Faheem Ershad</b> was selected to receive the <b>Cora Hawley Scholarship</b> from TcSUH. Congratulations! (Apr. 2021)</li>
-									
-		      							<li><b>Denis Nyarwaya</b> was selected to receive the 2021 Summer Undergraduate Research Fellowship! Congratulations! (Apr. 2021)</li>
-									
-		     		 					<li>J. Edwards writes a Special Reports titled – <a href="https://ieeexplore.ieee.org/document/9363489" style="color:red;">Wearables-Fashion With a Purpose: A New Generation of Wearable Devices Uses Signal Processing to Make Life Easier, Healthier, and More Secure</a> – on our drawn-on-skin (DoS) electronics, published in IEEE Signal Processing Magazine. (Mar. 2021)</li>
-									
-		      							<li>Our paper of drawn-on-skin (DoS) electronics is in the <b style="color:blue;">Top 50 Nature Communications</b> chemistry and materials science articles published in 2020.</li>
-									
-		      							<li>Dr. Yu was selected as the recipient of the <b>2021 SES Young Investigator Medal</b>. SES Young Investigator Medal is awarded to a promising early-career researcher whose work has already had an impact in his/her field within the engineering sciences. (Dec. 2020)</li>
-									
-		      							<li><b>Faheem Ershad</b> was recognized as the “<b>Best Presenter</b>” on presenting his work of “Multifunctional, Motion Artifact-Free Sensing  and Point-of-Care Treatment with Drawn-on-Skin Electronics” during the 2021 ASME IMECE conference. Huge Congratulations!! (Nov. 2020)</li>
-									
-		      							<li>Our work on rubbery, mulitfunctional epicardial bioelectronics led by Kyoseung Sim, Faheem Ershad and Yongcao Zhang is accepted by <b style="color:blue;">Nature Electronics</b>. (Aug. 2020)</li>
-		      
-									<li>Our review paper on “Soft electronics for the skins: from health monitors to human-machine interfaces” has been selected as the <b style="color:blue;">Frontispiece</b> of the journal of <b style="color:blue;">Advanced Materials Technologies</b>. (Aug. 2020)</li>
-									
-		      							<li>Our work on binary phased rubbery semiconductor nanofilm and rubbery electronics led by Yingshi Guan is accepted by <b style="color:blue;">Science Advances</b>. (July 2020)</li>
-									
-		      							<li>Our work on DoS bioelectronics led by Faheem Ershad is accepted by <b style="color:blue;">Nature Communications</b>. (May 2020)</li>
-									
-		      							<li>Our <b style="color:blue;">Advanced Materials</b> on reviewing the rubbery electronics was selected as <b style="color:blue;">Inside Back Cover</b>. (Mar. 2020)</li>
-									
-		      							<li><b>Faheem Ershad</b> won the <b>1st Place Best Poster Award</b> in the NASA 2020 Human Research Program Investigators’ Workshop – NASA HRP IWS 2020. Congratulations! (Jan. 2020)</li>
-									
-		      							<li><b>Dr. Yu</b> was selected as one of the 2020 SPIE Defense + Commercial Sensing (DCS) Rising Researcher in the area of Micro/Nano Fabrication. (Jan. 2020)</li>
-									
-		      							<li>Congratulations to <b>Kyoseung Sim</b> for accepting a <b>tenure track faculty</b> position in <b>Ulsan National Institute of Science and Technology – UNIST</b>, South Korea! Best wishes for his future academic career! (Jan. 2020)</li>
-									
-		      							<li><b>Faheem Ershad</b> won the <b>2nd Place Scholarship Award</b> in the UH 2019 Graduate Research Showcase, hosted by The UH Graduate School and the Office of the Provost. Congratulations! (Nov. 2019)</li>
-											      							
-		      							<li>Our <b style="color:blue;">Science Advances</b> paper on rubbery synaptic transistors and neurologically integrated smart skins and neurorobots was highlighted by many media outlets. (Oct. 2019)</li>
-									
-		      							<li>Our <b style:"blue;">Nature Electronics</b> paper on CAS printing and 3D curvy electronics was highlighted by <b style:"blue;"><i>Nature</i></b> and many other media outlets (Sept. 2019)<br> <a href="https://www.sciencedaily.com/releases/2019/09/190925123425.htm" target="_blank" style="color:red;">Science Daily</a>,<a href="https://techxplore.com/news/2019-09-curvy-electronics.html" target="_blank" style="color:red;"> Tech Xplore</a>,<a href="https://www.nanowerk.com/nanotechnology-news2/newsid=53672.php" target="_blank" style="color:red;"> Nanowerk</a>,<a href="https://www.pv-magazine.com/2019/09/26/the-ballooning-potential-of-curved-solar-cells/" target="_blank" style="color:red;"> PV Magazine</a>, etc.</br></li>
-									
-		      							<li>Our <b style="color:blue;">Science Advances</b> paper on ultra-soft human-machine interfaces published on was selected as the <b style="color:blue;">Cover</b> of 2019 August issue.</li>
-									
-		      							<li><b>Zhoulyu Rao</b>, <b>Hyunseok Shim</b>, and <b>Anish Thukral</b> received UH Mechanical Engineering Scholarship Awards. Congratulations! ( July 2019)</li>
-									
-		     							<li>Our paper on conformal additive stamp printing for 3D curvy electronics was accepted for publication on <b style="color:blue;">Nature Electronics</b>. (July 2019)</li>
-									
-		      							<li>Our paper on rubbery synaptic transistor and neurologically integrated system was accepted for publication on <b style="color:blue;">Science Advances</b>. (July 2019)</li>
-									
-		      							<li>Congratulations to <b>Zhoulyu Rao</b>, who was awarded the Cora Hawley Scholarship from TcSUH! (May 2019)</li>
-									
-		      							<li><b>Faheem Ershad</b> received the prestigious <b>National Science Foundation Graduate Research Fellowship</b>! Congratulations! (Apr 2019)</li>
-									
-		      							<li>Our paper on metal oxide semiconductor nanomembrane based multifunctional electronics for ultra-soft human-machine interfaces was accepted for publication on <b style="color:blue;">Science Advances</b>. (Mar. 2019)</li>
-									
-		      							<li>Our work on high effective carrier mobility rubbery semiconductor and integrated electronics was originally published on Science Advances has been highlights by many <b>media outlets</b>. (Feb. 2019)
-										<br><a href="https://www.sciencedaily.com/releases/2019/02/190201142400.htm" target="_blank" style="color:red;">Science Daily</a>,<a href="https://www.eurekalert.org/pub_releases/2019-02/uoh-rra020119.php" target="_blank" style="color:red;"> EurekAlert!</a>,<a href="https://techxplore.com/news/2019-02-advances-stretchable-semiconductors-electronics.html" target="_blank" style="color:red;"> TechXplore</a>,<a href="https://www.nanowerk.com/nanotechnology-news2/newsid=52043.php" target="_blank" style="color:red;"> nanowerk</a>,<a href="http://www.uh.edu/news-events/stories/2019/february-2019/02012019yu-rubbery-electronics.php" target="_blank" style="color:red;"> UH News</a>, etc.</br></li>
-									
-		      							<li><b>Dr. Yu</b> was selected to receive the 2019 Society of Manufacturing Engineers <b>(SME) Outstanding Young Manufacturing Engineer Award</b>, under age of 35, for his significant achievements and leadership in manufacturing and heterogeneous integration of materials and electronics. (Jan. 2019)</li>
-									
-		      							<li>Our work on tough, stretchable electronics based on nylon-elastomer composite has been accepted to feature as the Back Cover of the journal of <b style="color:blue;">Advanced Materials Technologies</b>. (Dec. 2018)</li>
-									
-		      							<li>Our work on stretchable pre-strained Si serpentine structure has been accepted to feature as the <a href="http://yu.me.uh.edu/wp-content/uploads/2014/02/admt201970003-gra-0001-m.jpg" target="_blank" style="color:red;">Frontispiece</a> of the journal of <b style="color:blue;">Advanced Materials Technologies</b>. (Dec. 2018)</li>
-									
-		      							<li>Congratulations to <b>Kyoseung Sim</b> for being selected to be the only winner of <b>UH Cullen College of Engineering Best Dissertation Award – Summer and Fall Terms 2018</b> (Nov. 2018)
-										See the <a href="https://www.egr.uh.edu/news/201811/materials-engineering-student-wins-best-dissertation-award-soft-and-curvilinear-wearable" target="_blank" style="color:red;">news</a>.</li>
-									
-		      							<li>Our paper titled “Fully rubbery integrated electronics from high effective mobility intrinsically stretchable semiconductors” was accepted for publication on <b style="color:blue;">Science Advances</b>.</li>
-									
-		      							<li>Congratulations to <b>Kyoseung Sim</b> for being selected as <b>Best Dissertation Award</b> in UH Materials Science and Engineering Program. (Oct. 2018)</li>
-									
-		      							<li><b>Kyoseung Sim</b> won the <b>First Prize Best Poster Award</b> in the inaugural workshop of Materials Today: Materials Science for the Next Two Decades. Congratulations! (Sept. 2018)
-										<br>See the <a href="https://www.egr.uh.edu/news/201810/wearable-human-machine-interface-device-wins-big-2018-materials-today-conference" target="_blank">news</a>.</br></li>
-									
-		      							<li><b>Kyoseung Sim</b> received UH <b>Mechanical Engineering Graduate Scholarship</b>. Congratulations! (Aug. 2018)</li>
-									
-		      							<li>Our work on bi-directionally stretchable rubbery transistor has been accepted to feature as the Frontispiece of the journal of <b style="color:blue;">Advanced Materials Technologies</b>. Congratulations! (April 2018)</li>
-									
-		      							<li>Our work on soft adaptive soft robotics that was originally published on Advanced Materials has been highlights by many <b>media outlets</b>. (April 2018)
-               								         <br><a href="https://www.sciencedaily.com/releases/2018/04/180418141325.htm" target="_blank" style="color:red;">Sciencedaily</a>,<a href="https://eurekalert.org/pub_releases/2018-04/uoh-rd041818.php" target="_blank" style="color:red;"> EurekAlert</a>,<a href="https://cnbcnews.in/news/140101/scientists-develop-soft-worm-like-robots-that-could-assist-earthquake-rescue-operations/" target="_blank" style="color:red;"> CNBC News</a>,
-										  <a href="http://www.robodaily.com/reports/Researchers_design_soft_robots_that_can_move_on_their_own_999.html" target="_blank" style="color:red;"> RoBo Daily</a>,<a href="https://techxplore.com/news/2018-04-soft-robots.html" target="_blank" style="color:red;"> TechXplore</a>,<a href="http://webcache.googleusercontent.com/search?q=cache:b0l9VOHOWVQJ:jerseytribune.com/2018/04/18/researchers-design-soft-robots-that-can-move-on-their-own/+&cd=37&hl=en&ct=clnk&gl=us&client=firefox-b-1-ab" target="_blank" style="color:red;"> JerseyTribue</a>,<a href="https://www.rdmag.com/news/2018/04/researchers-design-soft-robots-can-move-their-own" target="_blank" style="color:red;"> R&D Magazine</a>,<a href="https://www.financialexpress.com/lifestyle/science/scientists-develop-soft-worm-like-robots-that-could-assist-earthquake-rescue-operations/1138286/" target="_blank" style="color:red;"> Financial Express</a>,<a href="https://www.azorobotics.com/News.aspx?newsID=9847" target="_blank" style="color:red;"> Azorobotics</a>, etc.</br></li>
-									
-									<li><b>Dr. Yu</b> received <b>2018 3M Non-Tenured Faculty Award</b>.</li>
-									
-									<li><b>Dr. Yu</b> received <b>2018 ONR Young Investigator Award</b>. Thanks ONR for the support! (Feb. 2018)</li>
-									
-									<li>Congratulations to our post-doc <b>Haejin Kim</b> for accepting a <b>tenure track faculty</b> position in Gyeongsang National University, South Korea!</li>
-									
-		      							<li>Our work on Electrically Innervated Adaptive Fully Soft Robotics is featured as a <b style="color:blue;">Front Cover</b> of <b style="color:blue;">Journal Advanced Materials</b>. (Feb. 2018)
-										<br><br>UH News:</b><a href="http://www.uh.edu/news-events/stories/2018/april-2018/04-18-2018-yu-soft-robots.php" target="_blank" style="color:red;"> Researchers Design ‘Soft’ Robots that Can Move on Their Own</a></br></li>
-									
-		      							<li><b>Dr. Yu</b> was selected as an awardee of <b>MIT Technology Review’s 35 Innovators Under 35 China 2017 – TR35 China 2017</b>.  — Dr. Yu was cited as a “<b>Pioneer</b>” for his work in the emerging field of soft electronics and breakthrough work on creating stretchable rubbery semiconductor and rubbery transistor, sensors and integrated electronics and systems. (Jan. 2018)</li>
-									
-		      							<li>Congratulations to <b>Faheem Ershad</b>, who received the Provost’s Undergraduate Research Scholarship (PURS). (Dec. 2017)</li>
-									
-		      							<li>Congratulations to <b>Kyoseung Sim</b>, who received the <b>best poster award (1st place)</b> in the ASME IMECE-Wide Posters for NSF-Funded Research! <b>Two 1st place best poster awards on one day!!</b> (Nov. 2017)</li>
-									
-		      							<li>Congratulations to <b>Kyoseung Sim</b>, who received the <b>best poster award (1st place)</b> in the ASME IMECE 2017 Society-Wide Micro and Nanotechnology Form! (Nov. 2017)</li>
-									
-		      							<li><b>Kyoseung Sim</b> received <b>ABS Scholarship</b> from UH Mechanical Engineering Department. Congratulations! (Sept. 2017)</li>
-									
-		      							<li><b>Haejin Kim</b> received a very competitive <b>Postdoc Fellowship Fund</b> from National Research Foundation, Korea. Congratulations! (Sept. 2017)</li>
-									
-		      							<li>Our work on rubbery electronics and sensors originally that was published on Science Advances has been highlights by many <b>media outlets</b>. (Sept 2017)
-										<br><b>UH News:</b> <a href="http://uh.edu/news-events/stories/2017/SEPTEMBER%2017/09132017Yu-Stretchy-Electronics.php" target="_blank" style="color:red;">Artificial ‘Skin’ Gives Robotic Hand a Sense of Touch</a></br>             
-
-										<br><b>Live Science:</b> <a href="https://www.livescience.com/60386-robots-artificial-skin-stretchy-semiconductor.html" target="_blank" style="color:red;">Stretchy Artificial ‘Skin’ Could Give Robots a Sense of Touch</a></br>
-
-		    								<br><b>Xinhua:</b> <a href="http://news.xinhuanet.com/english/2017-09/10/c_136597409.htm" target="_blank" style="color:red;">Scientists make stretchy electronics from rubbery material</a></br></li>
-									
-		      							<li>Our work on moisture triggered physically transient electronics that was originally published on Science Advances has been highlights by many <b>media outlets</b>. (Sept 2017)
-										<br><b>UH News:</b><a href="http://www.uh.edu/news-events/stories/2017/August%202017/09062017Yu-Dissolving-Electronics.php" target="_blank" style="color:red;"> Breakthrough in Dissolving Electronics Holds Promise for Biomedicine: Discovery Has Applications for Eco-Friendly Disposal, Data Security and Healthcare</a></br>
-
-										<br><b>Science Daily, Phys.org:</b><a href="https://www.sciencedaily.com/releases/2017/09/170906135529.htm" target="_blank" style="color:red;">Researchers report new way to make dissolving electronics</a></br> 
-
-                 								<br><b>Materials World:</b><a href="http://materialsworld.tumblr.com/" target="_blank" style="color:red;"> The dissolving phone</a></br>
-
-										<br><b>Electronics 360:</b><a href="http://electronics360.globalspec.com/article/9746/eco-friendly-dissolvable-electronics-developed-for-personal-and-medical-uses" target="_blank" style="color:red;"> Eco-Friendly Dissolvable Electronics Developed for Personal and Medical Uses</a></br>
-
-										<br><b>Scientific American, Chemistry World:</b><a href="https://www.chemistryworld.com/news/self-destructing-circuits-mimic-mission-impossible-tape/3007946.article" target="_blank" style="color:red;"> Self-destructing circuits mimic Mission: impossible tape</a></br></li>
-									
-										<li>Our recent work was highlighted by <b>News</b> on <b style="color:blue;">Science</b> magazine.
-										<br><a href="http://www.sciencemag.org/news/2017/09/warning-electronic-will-self-destruct" target="_blank" style="color:red;">“Warning: This electronic will self-destruct” Matthew Hutson wrote a News on Science megazine that highlights our work on moisture triggered physically destructive transient electronics, originally published in Science Advances.</a></br></li>
-									
-		      							<li>Our paper titled “Rubbery electronics and sensors from intrinsically stretchable elastomeric composites of semiconductors and conductors” was accepted for publication on <b style="color:blue;">Science Advances</b>. Congratulations! (July 2017)</li>
-									
-		      							<li>Our paper entitled “Moisture triggered physically transient electronics” was accepted for publication on <b style="color:blue;">Science Advances</b>. Congratulations! (July 2017)</li>
-
-									<li>Dr. Yu serves as an <b>Editor</b> for <b>Frontiers in Bioengineering and Biotechnology</b>.</li>
-									
-									<li>Dr. Yu is invited to serve as an <b>Editorial Board Member</b> for <b>Scientific Reports</b>, a journal from Nature Publishing Group.</li>
-									
-									<li>Dr. Yu was awarded <b>Doctoral New Investigator</b> from ACS Petroleum Research Fund.(Jun 2016)</li>	
-								
-									<li>Dr. Yu received <b>NSF CAREER Award</b>. (Jan 2016)</li>
-									
-									<li>Dr. Yu received Paul H. Holloway <b>Young Investigator</b> Award from AVS Thin Film Division. (Aug 2015)</li>					
-								
-		      							<li>Our work on artificial camouflage skins recieved wide media coverage (Aug 2014)
-										<br><b>Discovery</b> <a href="http://news.discovery.com/tech/nanotechnology/camouflage-tech-copies-cuttlefishs-disappearing-act-140819.htm" target="_blank" style="color:red;">(Camouflage Tech Copies Cuttlefish’s Disappearing Act)</a>,<b> Time</b> <a href="https://time.com/3141614/octopus-skin-camouflage-device-university-of-houston-university-of-illinois/" target="_blank" style="color:red;">(Octopus Skin Has Inspired a New Type of Camouflage Sheet)</a>, 
-										<b>BBC</b> <a href="http://www.bbc.com/news/science-environment-28834186" target="_blank" style="color:red;">(Camouflage sheet inspired by octopus)</a>,<b> Yahoo</b> <a href="http://news.yahoo.com/color-changing-octopus-skin-inspires-camouflage-tech-190641390.html" target="_blank" style="color:red;">(Color-Changing Octopus Skin Inspires New Camouflage Tech)</a>,<b> National Geographic</b> <a href="http://phenomena.nationalgeographic.com/2014/08/18/adaptive-colour-changing-sheet-inspired-by-octopus-skin/" target="_blank" style="color:red;">(Adaptive Colour-Changing Sheet Inspired By Octopus Skin)</a>,
-										<b>Science News</b> <a href="https://www.sciencenews.org/article/nature-inspired-camouflage-changes-its-looks-light" target="_blank" style="color:red;">(Nature-inspired camouflage changes its looks with light)</a>,<b> Fox News</b> <a href="http://www.foxnews.com/tech/2014/08/21/octopus-camouflage-inspires-new-technology/" target="_blank" style="color:red;">(Octopus camouflage inspires new technology)</a>,<b> Wall Street OTC</b> <a href="http://www.wallstreetotc.com/octopus-inspires-camouflage-sheet/27542/" target="_blank" style="color:red;">(Octopus inspires camouflage sheet)</a>, 
-										<b>Nature World News</b> <a href="http://www.natureworldnews.com/articles/8601/20140818/latest-camouflage-material-inspired-cuttlefish.htm" target="_blank" style="color:red;">(Latest Camouflage Material Inspired by Cuttlefish)</a>, <b>Science Daily</b> <a href="http://www.sciencedaily.com/releases/2014/08/140818204118.htm" target="_blank" style="color:red;">(New ‘invisibility cloak’: Octopus-inspired camouflage systems automatically read surroundings and mimic them)</a>,
-										<b>Live Science</b> <a href="http://www.livescience.com/47416-octopus-inspired-camouflage.html" target="_blank" style="color:red;">(Color-Changing Octopus Skin Inspires New Camouflage Tech)</a>,<b> Popular Mechanics</b> <a href="http://www.popularmechanics.com/science/environment/water/behold-the-octopus-inspired-adaptive-camouflage-17108661?click=pm_latest" target="_blank" style="color:red;">(Behold the Octopus-Inspired Adaptive Camouflage)</a>,…</br></li>
-									
-		      							<li>Our recent paper on “adaptive artificial camouflage skins” was accepted for publishing by <b style="color:blue;">Proceedings of the National Academy of Sciences USA</b>. (2014)</li>
-									
-									<li><b style="color:blue;">Frontispiece</b> feature article for the April issue of <b style="color:blue;">Advanced Optical Materials</b> — Silicon-based visible-blind ultraviolet detection and imaging using down-shifting luminophores. (2014)</li>
-																
-									<li><b style="color:blue;">Back cover</b> feature article for the July issue of <b style="color:blue;">Advanced Functional Materials</b> – Deformable, programmable, and shape-memorizing micro-optics. (2013)</li>
-									
-									<li><b style="color:blue;">Frontispiece</b> feature article for the March issue of <b style="color:blue;">Advanced Materials</b> — Electronically programmable, reversible shape change in two- and three-dimensional hydrogel structures. (2013)</li>
-                
-
-
-              </ul>
-            </div>
-            
-            </article>
-
+          <div class="post-content">
+            <ul>
+              <li>
+                Hearty Congratulations to <b>Faheem Ershad</b> for accepting a 
+                <b>tenure track Assistant Professor</b> position in the Department of Electrical and Computer 
+                Engineering at <b>University of Houston</b>! Faheem is scheduled to defend his dissertation in 
+                the summer and will stay for a short stint in our lab at UIUC before leaving for his faculty position. 
+                (May 2024)
+              </li>
+            </ul>
           </div>
-        </main>
-
-        
-
+        </article>
       </div>
-    </body>
+    </main>
+  </div>
+</body>
 
-    </html>
-
-
-    </body>
-
-    </html>
-
-                  
-
-          
+</html>
