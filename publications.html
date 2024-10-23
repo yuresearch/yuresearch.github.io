@@ -78,18 +78,13 @@
     }
 
     .post-content ol {
-      list-style: decimal;
-      padding-left: 20px;
-      counter-reset: list-counter; /* Resets the counter for the list */
-    }
-
-    .post-content ol[reversed] {
       list-style: none;
-      counter-reset: list-counter 112; /* Adjust the starting point */
+      padding-left: 20px;
+      counter-reset: list-counter 112; /* Set to total items for correct numbering */
     }
 
     .post-content ol[reversed] li {
-      counter-increment: list-counter -1; /* Decrement the counter for reverse numbering */
+      counter-increment: list-counter -1; /* Decrement the counter */
       margin-bottom: 1em;
     }
 
