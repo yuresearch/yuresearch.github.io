@@ -5,143 +5,200 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Dr. Yu</title>
-  <meta name="description" content="">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="canonical" href="./projects.html">
-  <link rel="alternate" type="application/rss+xml" title="Zhao's Group" href="./feed.xml">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: white;
+    }
 
+    .content-box {
+      width: 90%;
+      max-width: 1200px;
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .header img {
+      width: 60px;
+      margin-right: 15px;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .site-nav {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .site-nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 8px 15px;
+    }
+
+    .site-nav a.active {
+      font-weight: bold;
+      border-bottom: 2px solid #333;
+    }
+
+    .content-section {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .profile-image {
+      flex: 0 0 200px;
+      margin-right: 20px;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-details {
+      flex: 1;
+    }
+
+    h4 {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #333;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .post-content ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+    }
+
+    .post-content li {
+      margin-bottom: 10px;
+    }
+
+    .contact-info, .education-info, .awards-info, .editorial-info {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
-
 <body>
-  <div class="content-box" style="width: 93%">
-    <header class="site-header" role="banner">
-      <div class="wrapper navigation-wrapper has-logo">
-        <div class="navigation-links">
-		<p><h1><b>Yu Research Group</b></h1></p>
-        <!-- Logo aligned to the left -->
-        <a href="https://www.psu.edu/" target="_blank" style="margin-right: 15px;">
-          <img src="./images/ps.jpg" alt="PSU Logo" style="width: 50px; height: auto; display: inline-block;">
-        </a>
-  </div>
+  <div class="content-box">
+    <!-- Header with logo and title -->
+    <div class="header">
+      <!-- University logo with link -->
+      <a href="https://illinois.edu/" target="_blank">
+        <img src="./images/uiuc logo.jpg" alt="University Logo">
+      </a>
+      <!-- Research group title -->
+      <h1>Yu Research Group</h1>
+    </div>
 
-        <!-- <div class="navigation-logo"> -->
-          <!-- </div> -->
-          <nav class="site-nav">
-            <a href="#" class="menu-icon">
-              <svg viewBox="0 0 18 15" width="18px" height="15px">
-                <path fill="#424242"
-                d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z" />
-                <path fill="#424242"
-                d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z" />
-                <path fill="#424242"
-                d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
-              </svg>
-            </a>
-            <div class="trigger">
-              <a class="page-link" href="./index.html">Home</a>
-	      <a class="page-link" href="./Dr. Yu.html">Dr. Yu</a>
-              <a class="page-link" href="./people.html">People</a>
-              <a class="page-link" href="./research.html">Research</a>
-              <a class="page-link" href="./publications.html">Publications</a>
-              <a class="page-link" href="./openings.html">Openings</a>
-	      <a class="page-link" href="./Group News.html">Group News</a>
-            </div>
-          </nav>
-        </div>
-      </header>
+    <!-- Navigation bar -->
+    <nav class="site-nav">
+      <a href="./index.html">Home</a>
+      <a class="active" href="./Dr. Yu.html">Dr. Yu</a>
+      <a href="./people.html">People</a>
+      <a href="./research.html">Research</a>
+      <a href="./publications.html">Publications</a>
+      <a href="./openings.html">Openings</a>
+      <a href="./Group News.html">Group News</a>
+    </nav>
 
-
-      <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-          <article class="post">
-
-
-
-            <div class="post-content">
-              <ul>
-		      		      <img src="./images/Dr. Yu.png" alt="Dr. Cunjiang Yu" width="200" height="auto" style="float: left; margin-right: 20px;">
-
-
-                							<h4><b>Cunjiang Yu</b>, Ph.D</h4>
-		      							Founder Professor<br>
-									Department of Electrical and Computer Engineering<br>
-		      							Department of Materials Science and Engineering <br>
-		      							Department of Mechanical Science and Engienering <br>
-		    							Department of Bioengineering<br>
-		      							Beckman Institute for Advanced Science and Technology<br>
-		      							Materials Research Laboratory<br>
-		      							Nick Holonyak Micro and Nanotechnology Laboratory<br>
-		      							University of Illinois, Urbana-Champaign</li><br><be>
-
-
-		    							<b>Email</b>: cunjiang@illinois.edu <be>
-		      							<b>Office</b>: MRL 212; Beckman 2215</br>
-		  							<b>Lab Location</b>: DCL, MRL, Beckman Institute <br> 
-									<div style="clear: both; padding-top: 20px;">
-									   <b>Email</b>: cunjiang@illinois.edu<br>
-									   <b>Office</b>: MRL 212; Beckman 2215<br>
-									   <b>Lab Location</b>: DCL, MRL, Beckman Institute<br>
-									</div> 
-
-		      							<h4><b>Education</b></h4>
-									<li>University of Illinois at Urbana-Champaign, Urbana, IL    (Nov. 2010 – Oct. 2013)<br>
-									Post-doc, Materials Science and Engineering<br>
-									Advisor: Prof. John A. Rogers (now at Northwestern U.)</li><br>
-		      							<li>Arizona State University, Tempe, AZ    (Aug. 2007 – Nov. 2010)<br>
-									Ph.D., Mechanical Engineering<br>
-									Advisor: Prof. Hanqing Jiang</li><br>
-		      							<li>Southeast University, Nanjing, China    (Sept. 2004 – Jun. 2007)<br>
-									M.S., Electrical Engineering (Major: Microelectronics and Solid State Electronics)</li><br>
-		      							<li>Southeast University, Nanjing, China    (Sept. 2000 – Jul. 2004)<br>
-									B.S., Mechanical Engineering</li><br>
-
-		      							<h4><b>Selected Awards & Honors</b></h4>
-		     							<li>IEEE Nanotechnology Conucil Distinguished Lecturer, 2024</li>							  		      			<li>ASME Fellow, 2023</li>
-		      							<li>ASME Chao and Trigger Young Manufacturing Engineer Award, 2023</li>
-		  							<li>CAB Mid-Career Investigator Award, 2023</li>
-									<li>ASME Thomas J. R. Hughes Young Investigator Award, 2023</li>
-									<li>IAAM Fellow, 2022</li>
-		      							<li>Society of Engineering Science (SES) Young Investigator Medal Award, 2021</li>
-									<li>NIH (NIBIB) Trailblazer Award, 2020</li>
-									<li>SPIE DCS Rising Researcher, 2020</li>
-									<li>Early Career Scholar in Materials Science, Journal of Materials Science, 2019</li>
-									<li>Emerging Leader of Journal of Micromechanics and Microengineering, 2019</li>
-									<li>SME Outstanding Young Manufacturing Engineer Award, 2019</li>
-									<li>3M Non-Tenured Faculty Award, 2018</li>
-									<li>Office of Naval Research (ONR) Young Investigator Award, 2018</li>
-									<li>Awardee of MIT Technology Review 35 Innovators Under 35 China (TR35 China) 2017</li>
-									<li>Doctoral New Investigator, American Chemical Society Petroleum Research Fund, 2016</li>
-									<li>National Science Foundation (NSF) CAREER Award, 2016.</li>
-									<li>Paul Holloway Young Investigator Award, American Vacuum Society, 2015.</li>
-									<li>Chinese Government Award for Outstanding Students Studying Abroad, 2011.</li><br>
-
-		      							<h4><b>Editorial Service</b></h4>
-		      							<li>Editor, Soft Science</li>
-		    							<li>Associate Editor, <a href="https://www.sciencedirect.com/journal/bioactive-materials" target="_blank"> Bioactive Materials</a></li>
-									<li>Associate Editor, IEEE Transactions on Nanotechnology</li>
-									<li>Young Star Editor, Nano Research</li>
-									<li>Editorial Board Member: Scientific Reports; Journal of Semiconductors; Journal of Composites Science</li>
-									<li>Guest Associate Editor, Frontiers in Bioengineering and Biotechnology</li>
-									<li>Guest Associate Editor, Frontiers in Materials</li>
-              </ul>
-            </div>
-
-            </article>
-
-          </div>
-        </main>
-
-
-
+    <!-- Main Content Section -->
+    <div class="content-section">
+      <!-- Profile Image -->
+      <div class="profile-image">
+        <img src="./images/Dr. Yu.png" alt="Dr. Cunjiang Yu">
       </div>
-    </body>
 
-    </html>
+      <!-- Profile Details -->
+      <div class="profile-details">
+        <h4>Cunjiang Yu, Ph.D</h4>
+        <p>Founder Professor<br>
+          Department of Electrical and Computer Engineering<br>
+          Department of Materials Science and Engineering<br>
+          Department of Mechanical Science and Engineering<br>
+          Department of Bioengineering<br>
+          Beckman Institute for Advanced Science and Technology<br>
+          Materials Research Laboratory<br>
+          Nick Holonyak Micro and Nanotechnology Laboratory<br>
+          University of Illinois, Urbana-Champaign
+        </p>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h4>Contact Information</h4>
+          <p><b>Email</b>: cunjiang@illinois.edu<br>
+             <b>Office</b>: MRL 212; Beckman 2215<br>
+             <b>Lab Location</b>: DCL, MRL, Beckman Institute
+          </p>
+        </div>
 
+        <!-- Education Section -->
+        <div class="education-info">
+          <h4>Education</h4>
+          <ul>
+            <li><b>Post-doc</b>, Materials Science and Engineering, University of Illinois at Urbana-Champaign, Nov. 2010 – Oct. 2013<br>
+              Advisor: Prof. John A. Rogers</li>
+            <li><b>Ph.D.</b>, Mechanical Engineering, Arizona State University, Aug. 2007 – Nov. 2010<br>
+              Advisor: Prof. Hanqing Jiang</li>
+            <li><b>M.S.</b>, Electrical Engineering, Southeast University, Nanjing, China, Sept. 2004 – Jun. 2007</li>
+            <li><b>B.S.</b>, Mechanical Engineering, Southeast University, Nanjing, China, Sept. 2000 – Jul. 2004</li>
+          </ul>
+        </div>
 
-    </body>
+        <!-- Awards & Honors Section -->
+        <div class="awards-info">
+          <h4>Selected Awards & Honors</h4>
+          <ul>
+            <li>IEEE Nanotechnology Council Distinguished Lecturer, 2024</li>
+            <li>ASME Fellow, 2023</li>
+            <li>ASME Chao and Trigger Young Manufacturing Engineer Award, 2023</li>
+            <!-- Add more awards here -->
+          </ul>
+        </div>
 
-    </html>
+        <!-- Editorial Service Section -->
+        <div class="editorial-info">
+          <h4>Editorial Service</h4>
+          <ul>
+            <li>Editor, Soft Science</li>
+            <li>Associate Editor, <a href="https://www.sciencedirect.com/journal/bioactive-materials" target="_blank">Bioactive Materials</a></li>
+            <li>Associate Editor, IEEE Transactions on Nanotechnology</li>
+            <!-- Add more editorial services here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
