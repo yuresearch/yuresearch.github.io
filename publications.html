@@ -78,13 +78,13 @@
     }
 
     .post-content ol {
-      counter-reset: list-counter;
+      counter-reset: list-counter 2; /* Start counter from the highest value */
       list-style: none;
       padding-left: 0;
     }
 
     .post-content ol li {
-      counter-increment: list-counter;
+      counter-increment: list-counter -1;
       margin-bottom: 1em;
     }
 
