@@ -77,21 +77,20 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .post-content ol {
-      counter-reset: list-counter 2; /* Start counter from the highest value */
+       .post-content ol {
       list-style: none;
       padding-left: 0;
+      counter-reset: list-counter; /* Resets the counter for the list */
     }
 
     .post-content ol li {
-      counter-increment: list-counter -1;
+      counter-increment: list-counter; /* Increments the counter */
       margin-bottom: 1em;
     }
 
     .post-content ol li::before {
       content: counter(list-counter) ". ";
       font-weight: bold;
-    }
 
     .pub-year-head {
       font-size: 1.5em;
