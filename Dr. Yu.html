@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yu Research Group</title>
     <style>
-        body {
+        /* Ensures the white background covers the full screen */
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
+        }
+        body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5; /* For contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5; /* Gray background for contrast */
         }
         .content-box {
             background-color: white;
             padding: 20px;
             width: 100%;
-            min-height: 100vh; /* Ensures it covers the full height of the page */
-            box-sizing: border-box; /* Includes padding in height calculation */
+            max-width: 1200px; /* Maximum width for readability */
+            height: 100%;
+            box-sizing: border-box; /* Includes padding in the width/height */
         }
         .header {
             display: flex;
@@ -45,6 +53,9 @@
             <!-- Research group title -->
             <h1>Yu Research Group</h1>
         </div>
+
+        <!-- Additional content can be added here -->
+        <p>Welcome to the Yu Research Group at the University of Illinois.</p>
     </div>
 
         <!-- <div class="navigation-logo"> -->
