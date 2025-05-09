@@ -41,18 +41,47 @@ a:hover {
 }
 
 /* Container Wrappers */
-.wrapper, .content-box {
+.content-box {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 24px;
-  background-color: #f7f7f7;
+  padding: 0;
+  background-color: transparent;  /* let the <main> wrapper hold the white background */
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;       /* white page background */
 }
 
 @media screen and (max-width: 800px) {
-  .wrapper, .content-box {
-    padding: 0 12px;
+  .wrapper {
+    padding: 12px;
   }
 }
+
+/* Header & Nav */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.site-title {
+  margin: 0;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-nav .page-link {
+  padding: 8px 0;
+}
+
 
 /* Responsive Images & Media */
 img, video, iframe, embed, object {
