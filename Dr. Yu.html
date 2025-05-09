@@ -1,233 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dr. Yu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Yu – Yu Research Group</title>
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="canonical" href="./projects.html">
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: white;
-    }
-
-    .content-box {
-      width: 90%;
-      max-width: 1200px;
-      background-color: white;
-      padding: 20px;
-      margin: 20px auto;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      padding-bottom: 20px;
-      border-bottom: 2px solid #ccc;
-    }
-
-    .header img {
-      width: 60px;
-      margin-right: 15px;
-    }
-
-    .header h1 {
-      margin: 0;
-    }
-
-    .site-nav {
-      margin-top: 10px;
-      margin-bottom: 20px;
-      padding: 10px 0;
-      display: flex;
-      justify-content: space-between;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .site-nav a {
-      color: #333;
-      text-decoration: none;
-      padding: 8px 15px;
-    }
-
-    .site-nav a.active {
-      font-weight: bold;
-      border-bottom: 2px solid #333;
-    }
-
-    .content-section {
-      display: flex;
-      margin-top: 20px;
-    }
-
-    .profile-image {
-      flex: 0 0 200px;
-      margin-right: 20px;
-    }
-
-    .profile-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .profile-details {
-      flex: 1;
-    }
-
-    h4 {
-      margin-top: 20px;
-      font-size: 1.2em;
-      color: #333;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    .post-content ul {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 0;
-    }
-
-    .post-content li {
-      margin-bottom: 10px;
-    }
-
-    .contact-info, .education-info, .awards-info, .editorial-info {
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="canonical" href="./Dr. Yu.html">
 </head>
-
 <body>
   <div class="content-box">
-    <!-- Header with logo and title -->
-    <div class="header">
-      <!-- University logo with link -->
+    <header class="site-header">
       <a href="https://illinois.edu/" target="_blank">
-        <img src="./images/uiuc logo.jpg" alt="University Logo">
+        <img src="./images/uiuc logo.jpg" alt="University Logo" class="lab-logo">
       </a>
-      <!-- Research group title -->
-      <h1>Yu Research Group</h1>
-    </div>
+      <h1 class="site-title">Yu Research Group</h1>
+      <nav class="site-nav">
+        <a href="./index.html" class="page-link">Home</a>
+        <a href="./Dr. Yu.html" class="page-link active">Dr. Yu</a>
+        <a href="./people.html" class="page-link">People</a>
+        <a href="./research.html" class="page-link">Research</a>
+        <a href="./publications.html" class="page-link">Publications</a>
+        <a href="./openings.html" class="page-link">Openings</a>
+        <a href="./Group News.html" class="page-link">Group News</a>
+      </nav>
+    </header>
 
-    <!-- Navigation bar -->
-    <nav class="site-nav">
-      <a href="./index.html">Home</a>
-      <a class="active" href="./Dr. Yu.html">Dr. Yu</a>
-      <a href="./people.html">People</a>
-      <a href="./research.html">Research</a>
-      <a href="./publications.html">Publications</a>
-      <a href="./openings.html">Openings</a>
-      <a href="./Group News.html">Group News</a>
-    </nav>
-
-<div class="content-section">
-  <!-- Profile Image -->
-  <div class="profile-image">
-    <img src="./images/Dr. Yu.png" alt="Dr. Cunjiang Yu">
-  </div>
-</div>
-
-<style>
-  .profile-image img {
-    width: 100px; /* Adjust width to desired size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for a better look */
-    margin-bottom: 2px; /* Optional: space below the image */
-  }
-</style>
-
-
-      <!-- Profile Details -->
-      <div class="profile-details">
-        <h4><strong>Cunjiang Yu, Ph.D</strong></h4>
-        <p>Founder Professor<br>
-          Department of Electrical and Computer Engineering<br>
-          Department of Materials Science and Engineering<br>
-          Department of Mechanical Science and Engineering<br>
-          Department of Bioengineering<br>
-          Beckman Institute for Advanced Science and Technology<br>
-          Materials Research Laboratory<br>
-          Nick Holonyak Micro and Nanotechnology Laboratory<br>
-          University of Illinois, Urbana-Champaign
-        </p>
-        
-        <!-- Contact Information -->
-        <div class="contact-info">
-          <h4><strong>Contact Information</strong></h4>
-          <p><b>Email</b>: cunjiang@illinois.edu<br>
-             <b>Office</b>: MRL 212; Beckman 2215<br>
-             <b>Lab Location</b>: DCL, MRL, Beckman Institute
+    <main class="wrapper">
+      <section class="content-section">
+        <div class="profile-image">
+          <img src="./images/Dr. Yu.png" alt="Dr. Cunjiang Yu">
+        </div>
+        <div class="profile-details">
+          <h2>Cunjiang Yu, Ph.D</h2>
+          <p>
+            Founder Professor<br>
+            Department of Electrical and Computer Engineering<br>
+            Department of Materials Science and Engineering<br>
+            Department of Mechanical Science and Engineering<br>
+            Department of Bioengineering<br>
+            Beckman Institute for Advanced Science and Technology<br>
+            Materials Research Laboratory<br>
+            Nick Holonyak Micro and Nanotechnology Laboratory<br>
+            University of Illinois, Urbana-Champaign
           </p>
-        </div>
 
-        <!-- Education Section -->
-        <div class="education-info">
-          <h4><strong>Education</strong></h4>
-          <ul>
-            <li><b>Post-doc</b>, Materials Science and Engineering, University of Illinois at Urbana-Champaign, Nov. 2010 – Oct. 2013<br>
-              Advisor: Prof. John A. Rogers</li>
-            <li><b>Ph.D.</b>, Mechanical Engineering, Arizona State University, Aug. 2007 – Nov. 2010<br>
-              Advisor: Prof. Hanqing Jiang</li>
-            <li><b>M.S.</b>, Electrical Engineering, Southeast University, Nanjing, China, Sept. 2004 – Jun. 2007</li>
-            <li><b>B.S.</b>, Mechanical Engineering, Southeast University, Nanjing, China, Sept. 2000 – Jul. 2004</li>
-          </ul>
-        </div>
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>
+              <strong>Email</strong>: cunjiang@illinois.edu<br>
+              <strong>Office</strong>: MRL 212; Beckman 2215<br>
+              <strong>Lab Location</strong>: DCL, MRL, Beckman Institute
+            </p>
+          </div>
 
-        <!-- Awards & Honors Section -->
-        <div class="awards-info">
-          <h4><strong>Selected Awards & Honors</strong></h4>
-          <ul>
-		     							<li>IEEE Nanotechnology Council Distinguished Lecturer, 2024</li>	
-            <li>ASME Fellow, 2023</li>
-		      							<li>ASME Chao and Trigger Young Manufacturing Engineer Award, 2023</li>
-		  							<li>CAB Mid-Career Investigator Award, 2023</li>
-									<li>ASME Thomas J. R. Hughes Young Investigator Award, 2023</li>
-									<li>IAAM Fellow, 2022</li>
-		      							<li>Society of Engineering Science (SES) Young Investigator Medal Award, 2021</li>
-									<li>NIH (NIBIB) Trailblazer Award, 2020</li>
-									<li>SPIE DCS Rising Researcher, 2020</li>
-									<li>Early Career Scholar in Materials Science, Journal of Materials Science, 2019</li>
-									<li>Emerging Leader of Journal of Micromechanics and Microengineering, 2019</li>
-									<li>SME Outstanding Young Manufacturing Engineer Award, 2019</li>
-									<li>3M Non-Tenured Faculty Award, 2018</li>
-									<li>Office of Naval Research (ONR) Young Investigator Award, 2018</li>
-									<li>Awardee of MIT Technology Review 35 Innovators Under 35 China (TR35 China) 2017</li>
-									<li>Doctoral New Investigator, American Chemical Society Petroleum Research Fund, 2016</li>
-									<li>National Science Foundation (NSF) CAREER Award, 2016.</li>
-									<li>Paul Holloway Young Investigator Award, American Vacuum Society, 2015.</li>
-									<li>Chinese Government Award for Outstanding Students Studying Abroad, 2011.</li>
-          </ul>
-        </div>
+          <div class="education-info">
+            <h3>Education</h3>
+            <ul>
+              <li><strong>Post-doc</strong>, Materials Science and Engineering, University of Illinois at Urbana-Champaign, Nov. 2010 – Oct. 2013<br>Advisor: Prof. John A. Rogers</li>
+              <li><strong>Ph.D.</strong>, Mechanical Engineering, Arizona State University, Aug. 2007 – Nov. 2010<br>Advisor: Prof. Hanqing Jiang</li>
+              <li><strong>M.S.</strong>, Electrical Engineering, Southeast University, Nanjing, China, Sept. 2004 – Jun. 2007</li>
+              <li><strong>B.S.</strong>, Mechanical Engineering, Southeast University, Nanjing, China, Sept. 2000 – Jul. 2004</li>
+            </ul>
+          </div>
 
-        <!-- Editorial Service Section -->
-        <div class="editorial-info">
-          <h4><strong>Editorial Service</strong></h4>
-          <ul>
-		      							<li>Editor, Soft Science</li>
-		    							<li>Associate Editor, <a href="https://www.sciencedirect.com/journal/bioactive-materials" target="_blank"> Bioactive Materials</a></li>
-									<li>Associate Editor, IEEE Transactions on Nanotechnology</li>
-									<li>Young Star Editor, Nano Research</li>
-									<li>Editorial Board Member: Scientific Reports; Journal of Semiconductors; Journal of Composites Science</li>
-									<li>Guest Associate Editor, Frontiers in Bioengineering and Biotechnology</li>
-									<li>Guest Associate Editor, Frontiers in Materials</li>
-          </ul>
+          <div class="awards-info">
+            <h3>Selected Awards &amp; Honors</h3>
+            <ul>
+              <li>IEEE Nanotechnology Council Distinguished Lecturer, 2024</li>
+              <li>ASME Fellow, 2023</li>
+              <li>ASME Chao and Trigger Young Manufacturing Engineer Award, 2023</li>
+              <li>CAB Mid-Career Investigator Award, 2023</li>
+              <li>ASME Thomas J. R. Hughes Young Investigator Award, 2023</li>
+              <li>IAAM Fellow, 2022</li>
+              <li>Society of Engineering Science (SES) Young Investigator Medal Award, 2021</li>
+              <li>NIH (NIBIB) Trailblazer Award, 2020</li>
+              <li>SPIE DCS Rising Researcher, 2020</li>
+              <li>Early Career Scholar in Materials Science, Journal of Materials Science, 2019</li>
+              <li>Emerging Leader of Journal of Micromechanics and Microengineering, 2019</li>
+              <li>SME Outstanding Young Manufacturing Engineer Award, 2019</li>
+              <li>3M Non-Tenured Faculty Award, 2018</li>
+              <li>Office of Naval Research (ONR) Young Investigator Award, 2018</li>
+              <li>MIT Technology Review 35 Innovators Under 35 China (TR35 China), 2017</li>
+              <li>Doctoral New Investigator, American Chemical Society Petroleum Research Fund, 2016</li>
+              <li>National Science Foundation (NSF) CAREER Award, 2016</li>
+              <li>Paul Holloway Young Investigator Award, American Vacuum Society, 2015</li>
+              <li>Chinese Government Award for Outstanding Students Studying Abroad, 2011</li>
+            </ul>
+          </div>
+
+          <div class="editorial-info">
+            <h3>Editorial Service</h3>
+            <ul>
+              <li>Editor, Soft Science</li>
+              <li>Associate Editor, <a href="https://www.sciencedirect.com/journal/bioactive-materials" target="_blank">Bioactive Materials</a></li>
+              <li>Associate Editor, IEEE Transactions on Nanotechnology</li>
+              <li>Youth Star Editor, Nano Research</li>
+              <li>Editorial Board Member: Scientific Reports; Journal of Semiconductors; Journal of Composites Science</li>
+              <li>Guest Associate Editor, Frontiers in Bioengineering and Biotechnology</li>
+              <li>Guest Associate Editor, Frontiers in Materials</li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Yu Research Group. All rights reserved.</p>
+    </footer>
   </div>
 </body>
-
 </html>
