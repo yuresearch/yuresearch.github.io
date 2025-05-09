@@ -45,20 +45,26 @@ a:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0;
-  background-color: transparent;  /* let the <main> wrapper hold the white background */
+  background-color: transparent;
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 24px;
-  background-color: #ffffff;       /* white page background */
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 800px) {
   .wrapper {
     padding: 12px;
   }
+}
+
+/* Responsive Images & Media */
+img, video, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Header & Nav */
@@ -82,70 +88,77 @@ a:hover {
   padding: 8px 0;
 }
 
-
-/* Responsive Images & Media */
-img, video, iframe, embed, object {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Header */
-.site-header {
-  border-bottom: 1px solid #e7e7e7;
-  padding: 16px 0;
-}
-.site-title {
-  font-size: 1.75rem;
-  font-weight: 300;
-  display: inline-block;
-  color: #424242;
-}
-
-/* Navigation */
-.site-nav .page-link {
-  display: inline-block;
-  padding: 8px 0;
-  margin-right: 20px;
-  color: #111;
-}
-.site-nav .page-link.active {
-  border-bottom: 2px solid #424242;
-  padding-bottom: 6px;
-  margin-bottom: -2px;
-}
-@media screen and (max-width: 800px) {
-  .site-nav {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    background-color: #fdfdfd;
-    border: 1px solid #e7e7e7;
-    border-radius: 5px;
-  }
-  .site-nav .page-link {
-    display: block;
-    margin: 8px 0;
-  }
-  .site-nav .menu-icon {
-    display: block;
-  }
-}
-
 /* Logos */
 .lab-logo {
-  height: 100px;
-  float: left;
-  margin-top: 5px;
-}
-.uh-logo {
-  height: 30px;
-  float: right;
-  margin-top: 30px;
+  max-height: 60px;
+  width: auto;
 }
 @media screen and (max-width: 800px) {
-  .lab-logo { height: 50px; margin-top: 2px; }
-  .uh-logo { display: none; }
+  .lab-logo {
+    max-height: 40px;
+  }
 }
+
+/* Publications Styling */
+.pub-proj-head, .pub-year-head {
+  font-weight: bold;
+  color: #169ab8;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+ol.publications {
+  list-style: none;
+  padding-left: 0;
+}
+ol.publications li {
+  margin-bottom: 1rem;
+}
+
+em.journal {
+  font-style: italic;
+  font-weight: bold;
+  color: #0000FF;
+}
+
+/* Code & Blockquote */
+pre, code {
+  font-size: 15px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  background-color: #eef;
+}
+code { padding: 1px 5px; }
+pre { padding: 8px 12px; overflow-x: auto; }
+blockquote {
+  color: #828282;
+  border-left: 4px solid #e7e7e7;
+  padding-left: 12px;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+/* Syntax Highlighting */
+.highlight { background: #fff; }
+.highlighter-rouge .highlight { background: #eef; }
+
+/* Profile Image */
+.profile-image img {
+  max-width: 150px;
+  height: auto;
+  float: left;
+  margin-right: 24px;
+  border-radius: 8px
+}
+
+@media screen and (max-width: 600px) {
+  .profile-image img {
+    max-width: 100%;
+    float: none;
+    margin: 0 auto 16px;
+    display: block;
+  }
+}
+
 
 /* Footer */
 .site-footer {
