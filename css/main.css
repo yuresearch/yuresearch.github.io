@@ -99,6 +99,28 @@ img, video, iframe, embed, object {
   }
 }
 
+/* Constrain all images site-wide */
+.content-box img {
+  max-width: 100%;      /* never overflow its container */
+  height: auto;
+}
+
+/* Publication gallery thumbnails */
+.publication-images img {
+  max-width: 120px;     /* pick a size that works for you */
+  margin: 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* If you end up embedding any journal logos inline in .post-content */
+.post-content img {
+  max-width: 80px;      /* smaller inline icons */
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+
 /* Publications Styling */
 .pub-proj-head, .pub-year-head {
   font-weight: bold;
