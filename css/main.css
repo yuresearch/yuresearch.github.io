@@ -1,54 +1,71 @@
-/* main.css - Unified Responsive Styles for Yu Research Group */
+/* main.css – Unified Responsive Styles for Yu Research Group =======================
+   Author: ChatGPT (refactor 2025-05-09)
+   ---------------------------------------------------------------------------
+   One stylesheet for *all* pages – no duplicates, fully mobile-responsive.
+   • Google Font: Open Sans
+   • Containers: .content-box (site width), .wrapper (page panel)
+   • Header / Nav: flex on desktop, stacked on ≤600 px
+   • Images: global max-width + context-specific caps
+   • Publications list: CSS counter for auto reverse numbering
+   • Tables: simple borders, full-width
+   ======================================================================== */
 
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* Google Font ----------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-/* Reset & Box-sizing */
+/* Reset / border-box ---------------------------------------------------------*/
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Base Styles */
+/* Body & base typography -----------------------------------------------------*/
 body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   color: #111;
-  background-color: #e7e7e7;
+  background: #e7e7e7;
   -webkit-text-size-adjust: 100%;
 }
 
-/* Outer & Inner Containers */
+h1 { font-size: 2rem;    margin-bottom: 1rem; }
+h2 { font-size: 1.75rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.5rem;  margin-bottom: 0.75rem; }
+h4 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+p  { margin-bottom: 1rem; }
+
+/* Links ----------------------------------------------------------------------*/
+a { color: #0066cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Site-wide containers -------------------------------------------------------*/
 .content-box {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0;
-  background-color: transparent;
+  background: transparent;
 }
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 24px;
-  background-color: #ffffff;
+  background: #fff;
 }
 @media (max-width: 800px) {
-  .wrapper {
-    padding: 12px;
-  }
+  .wrapper { padding: 12px; }
 }
 
-/* Header & Navigation */
+/* Header & navigation --------------------------------------------------------*/
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;               /* allow wrapping on tablets */
   padding: 16px 24px;
 }
 .site-title {
-  margin: 0;
   font-size: 1.75rem;
   font-weight: 700;
   color: #424242;
@@ -56,37 +73,32 @@ body {
 .site-nav {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;               /* wrap on smaller screens */
 }
 .page-link {
-  color: #111;
-  text-decoration: none;
   padding: 8px 0;
+  color: #111;
 }
 .page-link.active {
   border-bottom: 2px solid #424242;
 }
-.page-link:hover {
-  text-decoration: underline;
+
+/* Mobile header tweak (≤600 px) --------------------------------------------*/
+@media (max-width: 600px) {
+  .site-header { flex-direction: column; align-items: flex-start; }
+  .site-title  { font-size: 1.25rem; line-height: 1.3; }
+  .page-link.active { padding-bottom: 4px; }
 }
 
-/* Logo */
-.lab-logo {
-  max-height: 60px;
-  width: auto;
-}
-@media (max-width: 800px) {
-  .lab-logo {
-    max-height: 40px;
-  }
-}
+/* Logo -----------------------------------------------------------------------*/
+.lab-logo { max-height: 60px; width: auto; }
+@media (max-width: 600px) { .lab-logo { max-height: 40px; } }
 
-/* Responsive Media */
-img, video, iframe, embed, object {
-  max-width: 100%;
-  height: auto;
-}
+/* Responsive media -----------------------------------------------------------*/
+img, video, iframe, embed, object { max-width: 100%; height: auto; }
 
-/* Profile Image (Dr. Yu) */
+/* Context-specific image caps -----------------------------------------------*/
+/* Dr. Yu profile photo */
 .profile-image img {
   max-width: 150px;
   float: left;
@@ -102,99 +114,98 @@ img, video, iframe, embed, object {
   }
 }
 
-/* Publication Thumbnails */
+/* Publication gallery thumbnails */
 .publication-images img {
   max-width: 120px;
   margin: 8px;
   display: inline-block;
   vertical-align: top;
+  border-radius: 6px;
 }
+
+/* Inline logos/icons inside publication list */
 .post-content img {
   max-width: 80px;
   margin-right: 8px;
   vertical-align: middle;
+  border-radius: 4px;
 }
 
-/* Publications List */
+/* Student / member photos in People tables */
+table img {
+  max-width: 120px;         /* desktop */
+  border-radius: 8px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  table img { max-width: 80px; }
+}
+
+/* Publications list ----------------------------------------------------------*/
 ol.publications {
   list-style: none;
-  padding-left: 1.5em;
-  counter-reset: list-counter 120;
+  padding-left: 1.75em;      /* space for numbers */
+  counter-reset: list-counter 120; /* start value */
 }
 ol.publications li {
-  counter-increment: list-counter -1;
-  margin-bottom: 1rem;
+  counter-increment: list-counter -1; /* countdown */
   position: relative;
+  margin-bottom: 1rem;
 }
 ol.publications li::before {
   content: counter(list-counter) ". ";
   position: absolute;
   left: 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 .pub-year-head, .pub-proj-head {
-  font-weight: bold;
+  font-weight: 700;
   color: #169ab8;
   margin: 1rem 0 0.5rem;
 }
 
-/* Table Styles (People Page) */
+/* Tables (People & former members) ------------------------------------------*/
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 table th, table td {
-  padding: 8px;
   border: 1px solid #e7e7e7;
+  padding: 8px;
   vertical-align: top;
 }
 .former-members-table th {
-  background-color: #f7f7f7;
+  background: #f7f7f7;
   text-align: left;
 }
 
-/* Typography */
-h1 { font-size: 2rem; margin-bottom: 1rem; }
-h2 { font-size: 1.75rem; margin-bottom: 0.75rem; }
-h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
-h4 { font-size: 1.25rem; margin-bottom: 0.5rem; }
-p { margin-bottom: 1rem; }
-
-/* Links */
-a { color: #0066cc; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid #e7e7e7;
-  padding: 24px;
-  text-align: center;
-  font-size: 0.875rem;
-}
-
-em.journal {
-  font-style: italic;
-  font-weight: bold;
-  color: #0000FF;
-}
-
-/* Code & Blockquote */
+/* Code blocks & blockquotes --------------------------------------------------*/
 pre, code {
   font-size: 15px;
+  background: #eef;
   border: 1px solid #e7e7e7;
   border-radius: 3px;
-  background-color: #eef;
 }
 code { padding: 1px 5px; }
-pre { padding: 8px 12px; overflow-x: auto; }
+pre  { padding: 8px 12px; overflow-x: auto; }
 blockquote {
+  font-size: 1.125rem;
+  font-style: italic;
   color: #828282;
   border-left: 4px solid #e7e7e7;
   padding-left: 12px;
-  font-size: 1.125rem;
-  font-style: italic;
+  margin-bottom: 1rem;
 }
+
+/* Footer --------------------------------------------------------------------*/
+.site-footer {
+  border-top: 1px solid #e7e7e7;
+  padding: 24px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
 /**
  * Syntax highlighting styles
  */
